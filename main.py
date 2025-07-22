@@ -837,7 +837,7 @@ class DupeCheckerApp:
 
     return perceptual_duplicates
 
-    def get_perceptual_hash(self, full_path, timecode):
+def get_perceptual_hash(self, full_path, timecode):
     """Extract a frame from video and calculate perceptual hash - with better error handling"""
     try:
         ffmpeg_cmd = [
