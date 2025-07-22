@@ -843,7 +843,7 @@ class DupeCheckerApp:
         ffmpeg_cmd = [
             FFMPEG_PATH, "-ss", timecode, "-i", full_path, "-frames:v", "1",
             "-f", "image2pipe", "-vcodec", "mjpeg", "-q:v", "5", "-"
-        ]
+                     ]
         
         # IMPORTANT: Increase timeout for large files
         image_data = subprocess.check_output(
