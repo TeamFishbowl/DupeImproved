@@ -864,7 +864,7 @@ def get_perceptual_hash(self, full_path, timecode):
         return None
 
         # OPTIONAL: Add a method to estimate processing time
-    def estimate_perceptual_processing_time(self, file_count):
+def estimate_perceptual_processing_time(self, file_count):
     """Estimate how long perceptual processing will take"""
     # Rough estimates based on typical performance
     hash_time_per_file = 3  # seconds per file for FFmpeg extraction
