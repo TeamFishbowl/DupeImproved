@@ -1,0 +1,12 @@
+image: Visual Studio 2022
+
+init:
+  - cmd: set PATH=C:\Python310;C:\Python310\Scripts;%PATH%
+
+build_script:
+  - cmd: pip install pyinstaller pillow
+  - cmd: pyinstaller --onefile --noconsole main.py
+
+artifacts:
+  - path: dist\*.exe
+    name: DupeChecker
